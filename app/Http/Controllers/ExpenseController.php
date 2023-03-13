@@ -38,4 +38,5 @@ class ExpenseController extends Controller
         $store->description = $request->description;
 
     }
+
 }
