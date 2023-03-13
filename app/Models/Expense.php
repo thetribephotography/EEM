@@ -21,8 +21,9 @@ class Expense extends Model
         'category_id',
         'date',
         'description',
-        'file',
+        'receipt',
         'status',
+        'price',
 
     ];
 
