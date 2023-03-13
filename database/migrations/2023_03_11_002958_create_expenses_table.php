@@ -20,8 +20,9 @@ return new class extends Migration
             $collection->index('category_id');
             $collection->timestamp('date');
             $collection->string('description');
-            $collection->string('file');
+            $collection->string('receipt');
             $collection->integer('status');
+            $collection->integer('price');
             $collection->softDeletes();
             $collection->timestamps();
         });
