@@ -14,6 +14,12 @@ use App\Models\User;
 
 class ExpenseController extends Controller
 {
+
+    public function index(){
+        return view ('test');
+    }
+
+
     public function register(Request $request){
         $validated = $request->validate([
             'category' => 'required',

@@ -5,5 +5,6 @@
         </h2>
     </x-slot> --}}
 
-      {{-- <livewire:expense> --}}
+      <livewire:expense>
+        {{-- <livewire:add> --}}
 </x-app-layout>

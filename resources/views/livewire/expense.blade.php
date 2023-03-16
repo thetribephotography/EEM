@@ -1,6 +1,8 @@
-"@include('livewire.add')"
+{{-- 
 
        <div class="grid py-12">
+
+
 
         <div class="grid-1">
         
@@ -23,7 +25,6 @@
         </div>
 
         <div class="grid-2 max-w-7xl mx-auto sm:px-6 lg:px-8">
-            {{-- overflow-hidden --}}
         <div class="bg-white sm:rounded-lg relative overflow-x-auto shadow-md">
                 
     <table class="w-full text-sm text-left text-gray-500 bg-white">
@@ -59,9 +60,9 @@
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"/></svg></a>
                     </div>
                 </th>                
-                {{-- <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3">
                     <span class="sr-only">Edit</span>
-                </th> --}}
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -102,21 +103,32 @@
         </tbody>
     </table>
 
-        {{-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div class="floating-container">
-   <div class="floating-button block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >+</div>  
-</div> --}}
-
-<button  title="Add Expense"  data-modal-target="expense-modal" data-modal-toggle="authentication-modal"
-        class="fixed z-90 bottom-10 right-8 bg-blue-600 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300">&#10011;</button>
-
-            
-            </div>
-        </div>
+<!-- Modal toggle -->
+<button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  Toggle modal
+</button>
 
         <div class="grid-3">
             <p>And the Names'.........</p>
         </div>
+
+
+    </div> --}}
+
+
+
+
+
+
+    <div>
+                {{-- @include('livewire.register') --}}
+
+<!-- Modal toggle -->
+{{-- <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  Toggle modal
+</button> --}}
+
+<button class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="Livewire.emit('openModal', 'register')">Open Modal</button>
 
 
     </div>
